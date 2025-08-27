@@ -15,6 +15,28 @@
 <details>
   <summary>1 Class component</summary>
   
+  #### How to access class component childred elements ?
+  Ans: use this method `this.props.children` to access class component childred element 
+  #### How to access class component attributes ?
+  Ans: use this method `this.props.attribute_name` to access class component childred element 
+  #### pros কখনো ভিতর থেকে change কারা যাবে না change করতে হলে বাহির থেকেই করতে হবে 
+  #### এখান থেকে change করা যাব না 
+  ```jsx
+  import React from "react";
+class Clock extends React.Component{
+    render() {
+        return(
+            <>
+              <h1 className='text-6xl font-bold'>
+                {this.props.children} <br />
+                {new Date().toLocaleTimeString(this.props.local)}
+               </h1>
+            </>
+        )
+    }
+}
+export default Clock;
+  ```
   **Example**
   ```jsx
 // class component কে use করতে হলে react নিজেই একটা class বানিয়েছে আমাদের 
@@ -58,8 +80,15 @@ class Clock extends React.Component{
             // তাই Object এর মতো করে তাকে কল করতে হবে (this.props.local)
             // this হলো Clock class , and props হলো clock er properti and local হলো সেই attribute er 
             // নাম যেটা Object আকারে props er মধ্যে store হয়েছিল। 
-            
+
+            // react আপনার জন্য যে Object টা create করেছে সেটাই হলো (this);
+            // যেই Object create হয়েছে তার মধ্যে একটা properti ও create হয়েছে আটোমেটিকলি props নামে যখন 
+            // আপনি class component er মধ্যে attribute পাঠিয়েছেন। 
+
+            // সেই props এর মধ্যেই attribute ke paramiter হিসাবে পেয়ে যাবেন।
+
             // class এর যদি কোন properti কে access করতে হয় তাহলে 
+
               <h1 className='text-6xl font-bold'>{new Date().toLocaleTimeString(this.props.local)}</h1>
             </>
         )
