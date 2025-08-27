@@ -1,4 +1,8 @@
 # React notes
+
+
+<details>
+   <summary>Where we use class component or functional component</summary>
 # React Lifecycle Methods vs Hooks (Mapping Table)
 
 | Class Component Lifecycle           | Functional Component Hook         | ব্যাখ্যা |
@@ -18,16 +22,16 @@
 ## ✅ Class Component Example
 ```jsx
 class Example extends React.Component {
-  componentDidMount() {
-    console.log("Mounted");
+    componentDidMount() {
+        console.log("Mounted");
   }
 
   componentWillUnmount() {
-    console.log("Unmounted");
+      console.log("Unmounted");
   }
 
   render() {
-    return <h1>Hello</h1>;
+      return <h1>Hello</h1>;
   }
 }
 ```
@@ -37,11 +41,11 @@ class Example extends React.Component {
 import { useEffect } from "react";
 
 function Example() {
-  useEffect(() => {
-    console.log("Mounted");
+    useEffect(() => {
+        console.log("Mounted");
 
     return () => {
-      console.log("Unmounted");
+        console.log("Unmounted");
     };
   }, []);
 
@@ -49,8 +53,7 @@ function Example() {
 }
 
 ```
-
-
+</details>
 
 
 
