@@ -17,7 +17,6 @@
   
   **Example**
   ```jsx
-import React from "react";
 // class component কে use করতে হলে react নিজেই একটা class বানিয়েছে আমাদের 
 // সুধু সেই class টাকে extend করে নিয়ে আসতে হবে রিএক্ট থেকে তাই 
 // class component এর ক্ষেত্রে আমাদের extends React.Component লিখলেই হবে
@@ -38,6 +37,10 @@ import React from "react";
 
 // class component এর ক্ষেত্রে render() method er মধ্যে কোন কিছু return করতে হবে 
 // তাহলে সেই component কাজ করবে।
+
+
+// class component এর ক্ষেত্রে অবশ্যিক react import করতে হবে।
+import React from "react";
 class Clock extends React.Component{
     render(local) {
         return(
