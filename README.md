@@ -1,8 +1,9 @@
 # React notes
-
 <details>
 <summary>Where we use class component or functional component</summary>
 <details>
+---
+---
 <summary>React Functional Component কোথায় ব্যবহার করব?</summary>
 
 Functional Components মূলত সহজ এবং হালকা (lightweight)। আধুনিক React অ্যাপ্লিকেশনগুলোতে এগুলো বেশি জনপ্রিয়।
@@ -18,7 +19,6 @@ Functional Components মূলত সহজ এবং হালকা (lightwei
 ✔ Modern React Best Practice: React team-এর recommendation হলো functional component + hooks ব্যবহার করা।
 
 </details>
-
 <details>
 <summary>React Class Component কোথায় ব্যবহার করব?</summary>
 
