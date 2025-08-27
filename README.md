@@ -5,7 +5,7 @@
    <summary>Where we use class component or functional component</summary>
 
 <details>
-   <summary>✅ React Functional Component কোথায় ব্যবহার করব?</summary>
+   <summary>React Functional Component কোথায় ব্যবহার করব?</summary>
 
 Functional Components মূলত সহজ এবং হালকা (lightweight)। আধুনিক React অ্যাপ্লিকেশনগুলোতে এগুলো বেশি জনপ্রিয়। 
 
