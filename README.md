@@ -17,8 +17,7 @@ Functional Components মূলত সহজ এবং হালকা (lightwei
 <details>
 <summary>React Class Component কোথায় ব্যবহার করব?</summary>
 <br>
-Class Components পুরনো React style, কিন্তু কিছু ক্ষেত্রে এখনও ব্যবহার হতে পারে, ব্যবহারের ক্ষেত্র:
-
+Class Components পুরনো React style, কিন্তু কিছু ক্ষেত্রে এখনও ব্যবহার হতে পারে, ব্যবহারের ক্ষেত্র:<br>
  - Legacy Projects: পুরনো প্রোজেক্ট যেখানে আগে থেকেই class component ব্যবহার হচ্ছে।
  - Lifecycle Method দরকার: যেমন <span style="color: #d93d23;"> componentDidMount() </span>, <span style="color: #d93d23;">componentDidUpdate()</span>, <span style="color: #d93d23;">componentWillUnmount()</span> ইত্যাদি। যদিও এখন hooks দিয়ে functional component-এও এই কাজ করা যায়।
  - State Management (Old Way): আগে functional component-এ state ছিল না, তাই stateful logic এর জন্য class component লাগত। এখন <span style="color: #d93d23;">useState()</span> ও <span style="color: #d93d23;">useReducer()</span> দিয়ে এই সমস্যা নেই।
