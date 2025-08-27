@@ -30,4 +30,27 @@ class Example extends React.Component {
     return <h1>Hello</h1>;
   }
 }
+```
+
+## ✅ Functional Component Example (Same Work)
+```jsx
+import { useEffect } from "react";
+
+function Example() {
+  useEffect(() => {
+    console.log("Mounted");
+
+    return () => {
+      console.log("Unmounted");
+    };
+  }, []);
+
+  return <h1>Hello</h1>;
+}
+
+```
+
+
+
+
 
