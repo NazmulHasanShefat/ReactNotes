@@ -5,7 +5,7 @@
 <h5>React Lifecycle Methods vs Hooks</h5>
 <details>
 <summary>React Functional Component কোথায় ব্যবহার করব?</summary>
-
+<br>
 Functional Components মূলত সহজ এবং হালকা (lightweight)। আধুনিক React অ্যাপ্লিকেশনগুলোতে এগুলো বেশি জনপ্রিয়।
 
 ব্যবহারের ক্ষেত্র:
@@ -20,7 +20,7 @@ Functional Components মূলত সহজ এবং হালকা (lightwei
 </details>
 <details>
 <summary>React Class Component কোথায় ব্যবহার করব?</summary>
-
+<br>
 Class Components পুরনো React style, কিন্তু কিছু ক্ষেত্রে এখনও ব্যবহার হতে পারে।
 
 ব্যবহারের ক্ষেত্র:
