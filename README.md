@@ -22,7 +22,7 @@ Class Components পুরনো React style, কিন্তু কিছু �
 
  - Legacy Projects: পুরনো প্রোজেক্ট যেখানে আগে থেকেই class component ব্যবহার হচ্ছে।
 
- - Lifecycle Method দরকার: যেমন: [shields.io](https://shields.io/) [componentDidMount()], componentDidUpdate(), componentWillUnmount() ইত্যাদি। যদিও এখন hooks দিয়ে functional component-এও এই কাজ করা যায়।
+ - Lifecycle Method দরকার: যেমন: [componentDidMount()]("https://github.com/NazmulHasanShefat/ReactNotes"), componentDidUpdate(), componentWillUnmount() ইত্যাদি। যদিও এখন hooks দিয়ে functional component-এও এই কাজ করা যায়।
  
  - State Management (Old Way): আগে functional component-এ state ছিল না, তাই stateful logic এর জন্য class component লাগত। এখন useState() ও useReducer() দিয়ে এই সমস্যা নেই।
 </details>
