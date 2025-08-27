@@ -4,7 +4,8 @@
 <details>
    <summary>Where we use class component or functional component</summary>
 
-   ### ✅ React Functional Component কোথায় ব্যবহার করব?
+<details>
+   <summary>✅ React Functional Component কোথায় ব্যবহার করব?</summary>
 
 Functional Components মূলত সহজ এবং হালকা (lightweight)। আধুনিক React অ্যাপ্লিকেশনগুলোতে এগুলো বেশি জনপ্রিয়। 
 
@@ -18,8 +19,10 @@ Functional Components মূলত সহজ এবং হালকা (lightwei
 
 ✔ Modern React Best Practice: React team-এর recommendation হলো functional component + hooks ব্যবহার করা।
 
+</details>
 
-  ###  ✅React Class Component কোথায় ব্যবহার করব?
+<details>
+ <summary>React Class Component কোথায় ব্যবহার করব?</summary>
 
 Class Components পুরনো React style, কিন্তু কিছু ক্ষেত্রে এখনও ব্যবহার হতে পারে।
 
@@ -30,7 +33,7 @@ Class Components পুরনো React style, কিন্তু কিছু �
 ✔ Lifecycle Method দরকার: যেমন componentDidMount(), componentDidUpdate(), componentWillUnmount() ইত্যাদি। যদিও এখন hooks দিয়ে functional component-এও এই কাজ করা যায়।
 
 ✔ State Management (Old Way): আগে functional component-এ state ছিল না, তাই stateful logic এর জন্য class component লাগত। এখন useState() ও useReducer() দিয়ে এই সমস্যা নেই।
-
+</details>
 
 # React Lifecycle Methods vs Hooks (Mapping Table)
 
