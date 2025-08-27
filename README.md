@@ -54,7 +54,7 @@ export default Clock;
 <details>
  <summary>2 functional component</summary>
 
- **Example**
+ **File**
  `Button.jsx`
  ```jsx
 //  যেহুতু myclass Object হিসাবে এখানে এসেছে তাই object destructure করে নিতে হবে তাই একে {} এইরকম 
@@ -71,7 +71,7 @@ export default Clock;
 export default Button;
 ```
 
- **Example**
+ **File**
  `app.jsx`
  ```jsx
  import Button from "component/Button"
