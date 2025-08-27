@@ -12,13 +12,55 @@
  - component have two syntax `1 class component` and `2 functional component`
  - why we use class component? because class component is a stateful component যদিও state management `useSate()` hook এর মাধ্যমে হয়। এটাই react এর recomanded way কিন্তু পুরোন application এ কাজ করতে গেলে এটা প্রয়জন আছে তাই class component শেখা জরুরী এটা শিখলে react er core syntex বোঝা যাবে।
 
+<details>
+  <summary>1 Class component</summary>
+  
+  **Example**
+  ```jsx
+import React from "react";
+// class component কে use করতে হলে react নিজেই একটা class বানিয়েছে আমাদের 
+// সুধু সেই class টাকে extend করে নিয়ে আসতে হবে রিএক্ট থেকে তাই 
+// class component এর ক্ষেত্রে আমাদের extends React.Component লিখলেই হবে
+// Component react এর একটা super class
+// আমি সেই react pakeg এর component টাকে extend করে দিলাম। 
+// যখনি এটাকে আমি extend করে ফেলব তখন react er পুরো component 
+// class টার মধ্যে যা যা লিখা আছে সব কিছু আমি inharit ইনহেরিট করে 
+// নিয়ে আসলাম আমার Clock er মধ্যে । 
+// এখন এই react এর Component class er সব methods এবং propertis এর সবকিছুর access
+// আমার কাছে আছে।  এটাকে extend করার সাথে সাথে react এই component টাকে চিনতে পারবে।
+// function component er ক্ষেত্রে <Clock /> এই রকম কিছু থাকলে react খুজে Clock নামে 
+// কোন function আছে কি না? কিন্তু class component er ক্ষেত্রে react খুজে (Clock) নামে 
+// কোন class আছে কি না? যেটা React.Component কে extend করে।  সে পাইলো সেটা 
+// পাওয়ার পরে সে যেটা করে এই class er ভিতরে নিজে নিজেই একটা Object create করে। automaticly
+// সেই class এর render() নামে যে method আছে সে সেটাকে কল করে দেয়।
+
+// এই render() method টা define করা আছে (React.Component) class এর মধ্যে 
+
+// class component এর ক্ষেত্রে render() method er মধ্যে কোন কিছু return করতে হবে 
+// তাহলে সেই component কাজ করবে।
+class Clock extends React.Component{
+    render(local) {
+        return(
+            <>
+              <h1 className='text-6xl font-bold'>{new Date().toLocaleTimeString(local)}</h1>
+            </>
+        )
+    }
+}
+export default Clock;
+  ```
+</details>
+
+<details>
+ <summary>2 functional component</summary>
+
  **Example**
  `Button.jsx`
  ```jsx
 //  যেহুতু myclass Object হিসাবে এখানে এসেছে তাই object destructure করে নিতে হবে তাই একে {} এইরকম 
 // block er মধ্যে রাখতে হবে
  const Button = ({myclass}) => {
-    // now we can use {myclass} anywhere
+     // now we can use {myclass} anywhere
     return (
         <div>
             <button className={myclass}>modal btn</button><br />
@@ -34,8 +76,8 @@ export default Button;
  ```jsx
  import Button from "component/Button"
  const app = () => {
-    return (
-        <div>
+     return (
+         <div>
         // we con recive this button attributes as button component (paramiter) 
         // becouse button component is a valid javaScript function
         // এখানে যা attributes pass করা হবে তাই চলে যাবে Button component er (paramiter) হিসাবে Object আকারে
@@ -46,8 +88,11 @@ export default Button;
 
 export default app;
 ```
+</details>
 
 
+
+<!-- ===================================================================================== -->
 </details>
 <details>
 <summary>Where we use class component or functional component</summary>
