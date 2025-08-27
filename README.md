@@ -13,6 +13,8 @@
  **Example**
  `Button.jsx`
  ```jsx
+//  যেহুতু myclass Object হিসাবে এখানে এসেছে তাই object destructure করে নিতে হবে তাই একে {} এইরকম 
+// block er মধ্যে রাখতে হবে
  const Button = ({myclass}) => {
     return (
         <div>
@@ -32,6 +34,7 @@ export default Button;
         <div>
         // we con recive this button attributes as button component (paramiter) 
         // becouse button component is a valid javaScript function
+        // এখানে যা attributes pass করা হবে তাই চলে যাবে Button component er (paramiter) হিসাবে
            <Button myclass={"mb-5 text-white"}>
         </div>
     );
