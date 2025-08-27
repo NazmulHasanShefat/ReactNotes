@@ -1,7 +1,8 @@
 # React notes
 <details>
-<summary><h3>Where we use class component or functional component</h3></summary>
+<summary>Where we use class component or functional component</summary>
 
+<h5>React Lifecycle Methods vs Hooks</h5>
 <details>
 <summary>React Functional Component কোথায় ব্যবহার করব?</summary>
 
