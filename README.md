@@ -45,17 +45,17 @@ Class Components পুরনো React style, কিন্তু কিছু �
 
 ```jsx
 class Example extends React.Component {
-componentDidMount() {
-console.log("Mounted");
-}
+    componentDidMount() {
+        console.log("Mounted");
+    }
 
-componentWillUnmount() {
-console.log("Unmounted");
-}
+    componentWillUnmount() {
+        console.log("Unmounted");
+    }
 
-render() {
-return <h1>Hello</h1>;
-}
+    render() {
+        return <h1>Hello</h1>;
+    }
 }
 ```
 
@@ -65,15 +65,15 @@ return <h1>Hello</h1>;
 import { useEffect } from "react";
 
 function Example() {
-useEffect(() => {
-console.log("Mounted");
+    
+    useEffect(() => {
+       console.log("Mounted");
+        return () => {
+          console.log("Unmounted");
+        };
+    }, []);
 
-return () => {
-console.log("Unmounted");
-};
-}, []);
-
-return <h1>Hello</h1>;
+    return <h1>Hello</h1>;
 }
 ```
 
