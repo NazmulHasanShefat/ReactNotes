@@ -30,7 +30,8 @@ export default Button;
  const app = () => {
     return (
         <div>
-        // recive this button paramiter
+        // we con recive this button attributes as button component (paramiter) 
+        // becouse button component is a valid javaScript function
            <Button myclass={"mb-5 text-white"}>
         </div>
     );
