@@ -27,7 +27,7 @@ export default Button;
  **Example**
  `app.jsx`
  ```jsx
- const app = ({myclass}) => {
+ const app = () => {
     return (
         <div>
         // recive this button paramiter
