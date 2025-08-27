@@ -1,6 +1,6 @@
 # React notes
 <details>
-<summary><h2>Where we use class component or functional component</h2></summary>
+<summary><h3>Where we use class component or functional component</h3></summary>
 
 <details>
 <summary>React Functional Component কোথায় ব্যবহার করব?</summary>
