@@ -40,12 +40,27 @@
 
 
 // class component এর ক্ষেত্রে অবশ্যিক react import করতে হবে।
+// imported 19:00----20:00
 import React from "react";
 class Clock extends React.Component{
-    render(local) {
+    render() {
         return(
             <>
-              <h1 className='text-6xl font-bold'>{new Date().toLocaleTimeString(local)}</h1>
+            // class component এর ক্ষেত্রে যদি attributes er মাধ্যমে কিছু পাঠানো হয় তাহলে তাকে
+            // সেই React.Component class এর props নামক একটা propertis এর মধ্যে এটাকে ঢূকিয়ে দেয়। 
+            // তখন সেই props নামক propertis থেকে আমরা সেই attibutes কে সেই attribute এর নামে 
+            নিয়ে আসতে পারি । এবং ব্যবহার করয়ে পারি যেকোন যায়গায় 
+
+            // class এর কোন properti কে access করতে হলে (this) ব্যবহার করতে হবে।
+            // এই class এর অর্থাৎ Clock class এর কোন propertis এর মধ্যে আমরা attibutes পাঠিয়েছিলাম
+            // props নামক properis এর মধ্যে 
+
+            // তাই Object এর মতো করে তাকে কল করতে হবে (this.props.local)
+            // this হলো Clock class , and props হলো clock er properti and local হলো সেই attribute er 
+            // নাম যেটা Object আকারে props er মধ্যে store হয়েছিল। 
+            
+            // class এর যদি কোন properti কে access করতে হয় তাহলে 
+              <h1 className='text-6xl font-bold'>{new Date().toLocaleTimeString(this.props.local)}</h1>
             </>
         )
     }
