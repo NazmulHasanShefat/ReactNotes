@@ -10,3 +10,24 @@
 | `getDerivedStateFromProps()`       | `useEffect()` + state logic       | props অনুযায়ী state update করার জন্য। |
 | `componentDidCatch()` / Error Boundaries | এখনো Class Component-এ (Hooks এ নেই) | Error handling এর জন্য class component দরকার। |
 | `setState()`                       | `useState()` বা `useReducer()`    | state update করার জন্য। |
+
+
+
+---
+
+## ✅ Class Component Example
+```jsx
+class Example extends React.Component {
+  componentDidMount() {
+    console.log("Mounted");
+  }
+
+  componentWillUnmount() {
+    console.log("Unmounted");
+  }
+
+  render() {
+    return <h1>Hello</h1>;
+  }
+}
+
