@@ -19,7 +19,7 @@
   Ans: use this method `this.props.children` to access class component childred element 
   #### How to access class component attributes ?
   Ans: use this method `this.props.attribute_name` to access class component childred element 
-  #### pros কখনো ভিতর থেকে change কারা যাবে না change করতে হলে বাহির থেকেই করতে হবে 
+  #### props কখনো ভিতর থেকে change কারা যাবে না change করতে হলে বাহির থেকেই করতে হবে 
   #### এখান থেকে change করা যাব না 
   ```jsx
   import React from "react";
