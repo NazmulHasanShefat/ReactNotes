@@ -1,6 +1,7 @@
 # React notes
 <details>
 <summary>Where we use class component or functional component</summary>
+
 <details>
 ---
 ---
