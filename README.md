@@ -49,8 +49,8 @@ import React from "react";
 
 class Clock extends React.Component{
     constructor (props){ //
-        super(props); //updating state 
-        this.state = { date: new Date() };
+        super(props); //super(props) call করতে হবে যাতে react.component এর constructor টা কল হয়। 
+        this.state = { date: new Date(), local: "bn-BD"};
     }
     componentDidMount(){  //component যখন load হয়ে গেছে তার পর এই function call হবে।
        this.clockTimer = setInterval(() => this.startClock(), 1000);
@@ -67,6 +67,15 @@ class Clock extends React.Component{
     componentWillUnmount(){
         clearInterval(this.clockTimer)
     }
+     // class component callback function define always arrow function
+     // arrow function can not change (this) 
+    //  arrow function (this) কে পরোয়া করে না।
+    handle_click = () =>{ 
+        this.setState({  // arrow function না ব্যবহার করলে this কে পাওয়া যাবে না।
+            local: "en-US", // arrow function use করতে না চাইলে bind use করতে হবে।
+        })
+    }
+    // when you dont define arrow function you use bind method to define this function
     render() {
         return(
             <>
@@ -75,15 +84,48 @@ class Clock extends React.Component{
                 {this.state.date.toLocaleTimeString(this.props.local)}
                 <br />
                </h1>
-                <button className="border border-gray-600">Stop time</button>
+                <button onClick={this.handle_click} className="border border-gray-600">Stop time</button>
             </>
         )
     }
 }
 export default Clock;
 ```
-
-
+**How to use bind method**
+```jsx
+    constructor (props){ //
+        super(props); //super(props) call করতে হবে যাতে react.component এর constructor টা কল হয়। 
+        this.state = { date: new Date(), local: "bn-BD"};
+        this.handle_click = this.handle_click.bind(this) // এই handle_click এর bind method এর  মধ্যে এই constructor টার this পাস করে দিতে হবে। 
+    }
+    handle_click(){
+        this.setState({
+            local: "en-US",
+        })
+    }
+```
+```jsx
+class Clock extends React.Component{
+    constructor (props){ //
+        super(props); //super(props) call করতে হবে যাতে react.component এর constructor টা কল হয়। 
+        this.state = { date: new Date(), local: "bn-BD"};
+    }
+    handle_click(other_paramiter){
+        this.setState({
+            local: "en-US",
+        })
+    }
+    render(){
+        return(
+            <div>
+              <button onClick={this.handle_click.bind(this,other_Paramiter,"bn-BD")}></button>
+              // Or you can use
+              <button onClick={() => this.handle_click(paramiters)}></button>
+            </div>
+        )
+    }
+}
+```
   **Example**
   ```jsx
 // class component কে use করতে হলে react নিজেই একটা class বানিয়েছে আমাদের 
