@@ -2,7 +2,6 @@
 <details>
  <summary>React components and props</summary>
  <br>
-
  - components হল react এর কোন একটা পুরো `function()` টাই হল react এর একটা component,
  এবং সেই function টা যা return করে তাই হলো এক একটা element।
  - যেকোন component একটা **react element** return করবে। react er মধ্যে যদি ```jsx <Button />``` একটা element দেওয়া হয় তাহলে react খুজবে `Button` নামে কোন `function` আছে কি না ? তখন সেই `fuction এ যা return করা আছে তাকে react এর 
@@ -14,13 +13,14 @@
 
 <details>
   <summary>1 Class component</summary>
-  
+
   #### How to access class component childred elements ?
   Ans: use this method `this.props.children` to access class component childred element 
   #### How to access class component attributes ?
   Ans: use this method `this.props.attribute_name` to access class component childred element 
   #### props কখনো ভিতর থেকে change কারা যাবে না change করতে হলে বাহির থেকেই করতে হবে 
-  #### এখান থেকে change করা যাব না 
+  #### এখান থেকে change করা যাব না যদি render() kora হয় তাহলে এই পুরো component আবার re-render হবে। যখন সে দেখবে আবার props পরিবর্তন হয়েছে তখন সে আবার re-rander করবে এভাবে সে render করতেই থাকবে তখন সে infinity loop এ পরবে ফলে আপ্লিকেশন crash হতে পারে। 
+  #### change করা যাবে যেটা সেটা হলো state
   ```jsx
   import React from "react";
 class Clock extends React.Component{
@@ -37,6 +37,48 @@ class Clock extends React.Component{
 }
 export default Clock;
   ```
+
+**Example stateful component**
+```jsx
+import React from "react";
+
+class Clock extends React.Component{
+    constructor (props){ //
+        super(props); //updating state 
+        this.state = { date: new Date() };
+    }
+    componentDidMount(){  //component যখন load হয়ে গেছে তার পর এই function call হবে।
+       this.clockTimer = setInterval(() => this.startClock(), 1000);
+    }
+    
+    startClock(){  // created a function for start this clock
+        this.setState({
+            date: new Date() 
+        })
+    }
+    // আমরা যখন আন্য পেইজে যাব রাঊট করে তখন যেন এই ঘড়িটা বন্ধ হয়ে যায় তার জন্য
+    // ব্যবহার করতে হবে componentWillUnmount() এটা react er 
+    // build in method
+    componentWillUnmount(){
+        clearInterval(this.clockTimer)
+    }
+    render() {
+        return(
+            <>
+              <h1 className='text-6xl font-bold'>
+                {this.props.children} <br />
+                {this.state.date.toLocaleTimeString(this.props.local)}
+                <br />
+               </h1>
+                <button className="border border-gray-600">Stop time</button>
+            </>
+        )
+    }
+}
+export default Clock;
+```
+
+
   **Example**
   ```jsx
 // class component কে use করতে হলে react নিজেই একটা class বানিয়েছে আমাদের 
