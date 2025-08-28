@@ -18,9 +18,14 @@
   Ans: use this method `this.props.children` to access class component childred element 
   #### How to access class component attributes ?
   Ans: use this method `this.props.attribute_name` to access class component childred element 
-  #### props কখনো ভিতর থেকে change কারা যাবে না change করতে হলে বাহির থেকেই করতে হবে 
-  #### এখান থেকে change করা যাব না যদি render() kora হয় তাহলে এই পুরো component আবার re-render হবে। যখন সে দেখবে আবার props পরিবর্তন হয়েছে তখন সে আবার re-rander করবে এভাবে সে render করতেই থাকবে তখন সে infinity loop এ পরবে ফলে আপ্লিকেশন crash হতে পারে। 
-  #### change করা যাবে যেটা সেটা হলো state
+  #### How to call calss component `function()` ?
+  Ans: use `this.function_name` kyeword.
+  ### react এর class component এ যকোন `function()` এর মাধ্যমে কোন event handle করলে সেই `function()` কে call করতে হবে `this.function_name` এভাবে যেহুতু এই `function()` টা এই class এর একটা method তাই `this kyeword` use করতে হবে।  
+
+
+  ### props কখনো ভিতর থেকে change কারা যাবে না change করতে হলে বাহির থেকেই করতে হবে 
+  ### এখান থেকে change করা যাব না যদি render() kora হয় তাহলে এই পুরো component আবার re-render হবে। যখন সে দেখবে আবার props পরিবর্তন হয়েছে তখন সে আবার re-rander করবে এভাবে সে render করতেই থাকবে তখন সে infinity loop এ পরবে ফলে আপ্লিকেশন crash হতে পারে। 
+  ### change করা যাবে যেটা সেটা হলো state
   ```jsx
   import React from "react";
 class Clock extends React.Component{
