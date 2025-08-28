@@ -10,6 +10,7 @@
  এই `height={a}` paramiter হিসাবে component থেকে element এ যেকোন কিছু পাস করতে পারি।
  - component have two syntax `1 class component` and `2 functional component`
  - why we use class component? because class component is a stateful component যদিও state management `useSate()` hook এর মাধ্যমে হয়। এটাই react এর recomanded way কিন্তু পুরোন application এ কাজ করতে গেলে এটা প্রয়জন আছে তাই class component শেখা জরুরী এটা শিখলে react er core syntex বোঝা যাবে।
+ <br>
 
 <details>
   <summary>1 Class component</summary>
