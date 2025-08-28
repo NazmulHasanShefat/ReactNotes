@@ -2,11 +2,12 @@
 <details>
  <summary>React components and props</summary>
  <br>
+ 
  - components হল react এর কোন একটা পুরো `function()` টাই হল react এর একটা component,
  এবং সেই function টা যা return করে তাই হলো এক একটা element।
  - যেকোন component একটা **react element** return করবে। react er মধ্যে যদি ```jsx <Button />``` একটা element দেওয়া হয় তাহলে react খুজবে `Button` নামে কোন `function` আছে কি না ? তখন সেই `fuction এ যা return করা আছে তাকে react এর 
  element হিসাবে দেখাবে। 
- - `<button height={a}/>` এটা যদি normal HTML element এর মত হতো তাহলে এটাতে আমরা paramiter দিতে পারতাম না, এটা যেহুতু একটা valid javaScript `function()` এজন্য আমরা এটাতে paramiter use করতে পারব এটাই react component এর power
+ - `<button height={a} />` এটা যদি normal HTML element এর মত হতো তাহলে এটাতে আমরা paramiter দিতে পারতাম না, এটা যেহুতু একটা valid javaScript `function()` এজন্য আমরা এটাতে paramiter use করতে পারব এটাই react component এর power
  এই `height={a}` paramiter হিসাবে component থেকে element এ যেকোন কিছু পাস করতে পারি।
  - component have two syntax `1 class component` and `2 functional component`
  - why we use class component? because class component is a stateful component যদিও state management `useSate()` hook এর মাধ্যমে হয়। এটাই react এর recomanded way কিন্তু পুরোন application এ কাজ করতে গেলে এটা প্রয়জন আছে তাই class component শেখা জরুরী এটা শিখলে react er core syntex বোঝা যাবে।
