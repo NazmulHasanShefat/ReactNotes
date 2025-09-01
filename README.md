@@ -2,7 +2,7 @@
 <details>
  <summary>React components and props</summary>
  <br>
- 
+
  - components হল react এর কোন একটা পুরো `function()` টাই হল react এর একটা component,
  এবং সেই function টা যা return করে তাই হলো এক একটা element।
  - যেকোন component একটা **react element** return করবে। react er মধ্যে যদি ```jsx <Button />``` একটা element দেওয়া হয় তাহলে react খুজবে `Button` নামে কোন `function` আছে কি না ? তখন সেই `fuction এ যা return করা আছে তাকে react এর 
@@ -14,6 +14,7 @@
  <br>
 
 <details>
+  <!-- class component================================================================= -->
   <summary>1 Class component</summary>
 
   #### How to access class component childred elements ?
@@ -228,6 +229,26 @@ export default app;
 ```
 </details>
 
+<br>
+
+<!-- ======================  conditional rendering  ==================================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- ===================================================================================== -->
@@ -310,4 +331,37 @@ function Example() {
 }
 ```
 
+</details>
+
+<details>
+  <summary>How to use axios<summary>
+
+  **example**
+  ```jsx
+  import axios from 'axios';
+
+async function createUser(name, email) {
+    try {
+        const response = await axios.post('https://api.example.com/users', {
+            name: name,
+            email: email
+        });
+        console.log('User created successfully:', response.data);
+        return response.data; // Return the data from the successful response
+    } catch (error) {
+        console.error('Error creating user:', error.message);
+        // You can throw the error or handle it as needed
+        throw error; 
+    }
+}
+
+// Example usage:
+createUser('John Doe', 'john.doe@example.com')
+    .then(userData => {
+        // Do something with the created user data
+    })
+    .catch(error => {
+        // Handle errors from the createUser function
+    });
+  ```
 </details>
