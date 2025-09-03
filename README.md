@@ -333,8 +333,9 @@ function Example() {
 
 </details>
 
+
 <details>
-  <summary>How to use axios<summary>
+  <summary>How to use axios</summary>
 
   **example**
   ```jsx
