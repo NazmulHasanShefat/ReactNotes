@@ -1,7 +1,10 @@
 # React notes
+<details>
+ <summary>📚 Basics</summary>
 |             📚 Basics              |
 | :-------------------------------: |
 | [Introduction](./Documents/introduction.md)  |
+</details>
 
 
 
