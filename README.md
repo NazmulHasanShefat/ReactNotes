@@ -4,6 +4,7 @@
 
 | :-------------------------------: |
 | [Introduction](./Documents/introduction.md)  |
+| [Introduction](./Documents/introduction.md)  |
 </details>
 
 <details>
