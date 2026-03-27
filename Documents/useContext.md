@@ -1,19 +1,21 @@
 # useContext hook
 
 - step 01 Create a Contex
-`ThemeContext.jsx`
 ```js
+`ThemeContext.jsx`
 import { createContext } from "react";
 export const ThemeContext = createContext();
 ```
 - step 02 Wrap your parent component use your created context and give the context value this value can be Object string or Array any kind of javaScript data you can put in this `<ThemeContext.Provider value="anydata">` component props value.
 ```js
+`parentComponent.jsx`
 <ThemeContext.Provider value={[themeValue, "red"]}>
      <GrandParent />
 </ThemeContext.Provider>
 ```
 - step 3 you can access this ContextProvider value and nested componet like this
 ```js
+`nestedcomponent.jsx`
 import React, { useContext } from 'react';
 import { ThemeContext } from '../../../context/UserContext';
 
