@@ -1,7 +1,34 @@
 # React notes
-| 📚 Basics | ⚙️ Hooks | 🔄 State | 📦 Components | 🌐 API | 🧪 Testing |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| [Introduction](./Documents/introduction.md) | [useState](./hooks/useState.md) | [Props](./state/props.md) | [Functional](./components/functional.md) | [Fetch](./api/fetch.md) | [Jest](./testing/jest.md) |
-| [Props](./basics/props.md) | [useEffect](./hooks/useEffect.md) | [Context](./state/context.md) | [Class](./components/class.md) | [Axios](./api/axios.md) | [React Testing](./testing/react-testing.md) |
-| [State](./basics/state.md) | [Custom](./hooks/custom.md) | [Redux](./state/redux.md) | [Lifecycle](./components/lifecycle.md) | [REST](./api/rest.md) | [Coverage](./testing/coverage.md) |
+|             📚 Basics              |
+| :-------------------------------: |
+| [Introduction](./Documents/introduction.md)  |
+
+
+
+|             ⚙️ Hooks              |
+| :-------------------------------: |
+|  [useState](./hooks/useState.md)  |
+| [useEffect](./hooks/useEffect.md) |
+| [useActionState](./hooks/useActionState.md) |
+
+
+
+|             🔄 State              |
+| :-------------------------------: |
+|  [useState](./hooks/useState.md)  |
+
+
+|      	📦 Components              |
+| :-------------------------------: |
+|  [useState](./hooks/useState.md)  |
+| [useEffect](./hooks/useEffect.md) |
+| [useActionState](./hooks/useActionState.md) |
+| [useActionState](./hooks/useActionState.md) |
+
+|      	🌐 API              |
+| :-------------------------------: |
+|  [useState](./hooks/useState.md)  |
+| [useEffect](./hooks/useEffect.md) |
+| [useActionState](./hooks/useActionState.md) |
+| [useActionState](./hooks/useActionState.md) |
 
