@@ -1,38 +1,40 @@
 # React notes
 <details>
  <summary>📚 Basics</summary>
- 
-|             📚 Basics              |
+
 | :-------------------------------: |
 | [Introduction](./Documents/introduction.md)  |
 </details>
 
+<details>
+ <summary>⚙️ Hooks </summary>
 
-
-|             ⚙️ Hooks              |
-| :-------------------------------: |
+| [useActionState](./hooks/useActionState.md) |
 |  [useState](./hooks/useState.md)  |
 | [useEffect](./hooks/useEffect.md) |
+</details>
+
+<details>
+ <summary>🔄 State   </summary>
+
 | [useActionState](./hooks/useActionState.md) |
-
-
-
-|             🔄 State              |
-| :-------------------------------: |
-|  [useState](./hooks/useState.md)  |
-
-
-|      	📦 Components              |
-| :-------------------------------: |
 |  [useState](./hooks/useState.md)  |
 | [useEffect](./hooks/useEffect.md) |
-| [useActionState](./hooks/useActionState.md) |
-| [useActionState](./hooks/useActionState.md) |
+</details>
 
-|      	🌐 API              |
-| :-------------------------------: |
+<details>
+ <summary>📦 Components</summary>
+
+| [useActionState](./hooks/useActionState.md) |
 |  [useState](./hooks/useState.md)  |
 | [useEffect](./hooks/useEffect.md) |
+</details>
+
+<details>
+ <summary> 	🌐 API   </summary>
+
 | [useActionState](./hooks/useActionState.md) |
-| [useActionState](./hooks/useActionState.md) |
+|  [useState](./hooks/useState.md)  |
+| [useEffect](./hooks/useEffect.md) |
+</details>
 
