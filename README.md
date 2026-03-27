@@ -5,16 +5,14 @@
 | Basics |
 | :------: |
 | [Introduction](./Documents/introduction.md) |
-| [Introduction](./Documents/introduction.md) |
 </details>
 
 <details>
  <summary>⚙️ Hooks </summary>
 
-| Basics |
+| --- |
 | :------: |
-| [Introduction](./Documents/introduction.md) |
-| [Introduction](./Documents/introduction.md) |
+| [useContext](./Documents/useContext.md) |
 </details>
 
 <details>
